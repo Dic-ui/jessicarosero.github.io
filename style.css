@@ -1,0 +1,167 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+.header {
+    background-color: #34495E;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Navegación */
+.navigation {
+    background-color: #2C3E50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Sobre mí */
+#about {
+    background-color: #1ABC9C;
+    color: #fff;
+}
+
+#about .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+#about .section-text {
+    font-size: 1.2rem;
+}
+
+/* Sección Datos Básicos */
+#basic-info {
+    background-color: #E74C3C;
+    color: #fff;
+}
+
+.info-list {
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+.info-list li {
+    margin: 10px 0;
+}
+
+/* Sección Habilidades */
+#skills {
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.skills-list {
+    list-style-type: square;
+    font-size: 1.1rem;
+}
+
+.skills-list li {
+    margin: 10px 0;
+}
+
+/* Sección Pasatiempos */
+#hobbies {
+    background-color: #9B59B6;
+    color: #fff;
+}
+
+.hobbies-section .section-title {
+    font-family: 'Playfair Display', serif;
+}
+
+.hobbies-section .section-text {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #2C3E50;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 1rem;
+}
+
+/* Flexbox para la disposición */
+.about-section, .info-section, .skills-section, .hobbies-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .navigation ul li {
+        margin: 0 10px;
+    }
+}
